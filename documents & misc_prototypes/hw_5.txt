@@ -1,0 +1,15 @@
+1) Blinking with a time-varying frequency: 
+
+- The initial RED led blink period should be 1 second. After each "5 blinks", the blink period should be shortened by 20 ms. 
+
+- The period shortening process should continue until blink frequency reaches 50 Hz and restart from 1 Hz  (1 sec period). (Consider and adjust DCOCLK to 1 MHz )
+
+2) Button controlled blink frequency:
+
+- The initial RED led blink period should be 1 second.
+
+- If button (P1.3) is pressed:
+
+a) blinking should stop b) the period should be shortened by 100 ms c) Green LED should be ON for 100 ms then be turned OFF. (Thus, button press should be observed via GREEN led) d) Button press  should shorten the period until the blink frequency reaches 10 Hz and restart from 1 Hz  (1 sec period). (Consider and adjust DCOCLK to 1 MHz 
+
+- If no button is pressed, blinking should continue.

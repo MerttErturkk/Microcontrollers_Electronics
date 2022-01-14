@@ -1,0 +1,52 @@
+Determine the final value and so the direction of Port 1pins after compact command groups:
+
+( Hint: P1DIR |= A is the compact form of P1DIR = P1DIR | A )
+
+1) ..
+
+P1DIR = 0x04;
+
+P1DIR |=0x01;
+
+2).. (This a new start, forget the previous values)
+
+P1DIR = 0x81;
+
+P1DIR = 0x40 | 0x08;
+
+3).. (This a new start, forget the previous values)
+
+P1DIR = 0x80;
+
+P1DIR |= 0x80;
+
+4).. (This a new start, forget the previous values)
+
+P1DIR = 0xFF;
+
+P1DIR &= 0x80;
+
+5).. (This a new start, forget the previous values)
+
+P1DIR = 0xFF;
+
+P1DIR &= ~0x80;
+
+6).. (This a new start, forget the previous values)
+
+P1DIR = 0xFF;
+
+P1DIR ^= 0x41;
+
+7).. (This a new start, forget the previous values)
+
+P1DIR = 0x00;
+
+P1DIR ^= ~0x77;
+
+Coding:
+
+      Using the example project code "Blink", create a new project named "Homework2" and script such that:
+     - Red and Green LEDs on the Lauchpad will blink in alternating orders. That is, RED LED should be ON if GREEN LED is OFF and vice versa.
+     - Each LED should be ON for 5K (5.000) cycles.
+     Hint: You can still use XOR operation. Now we will have a new mask.

@@ -1,0 +1,18 @@
+Theoretical 
+
+Calculate the binary representations of numbers by hand:
+0x1A
+196
+23.125 (UQ5.3) ( 8 bits in total, 5 bits for integer, 3 bits for fractional part)
+12.130 (UQ4.4)
+     2. Calculate the value of resulting variable in each script group (Refer to final slides of Week 2):
+
+x = 0x22;
+x = x >> 3;
+y = 0x01;
+z = 0x44;
+z |= y;
+X = 0x00FF;
+Y = 0x6234;
+Y &= ~X;
+Y = Y >> 8 ;

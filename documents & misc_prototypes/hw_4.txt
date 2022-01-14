@@ -1,0 +1,19 @@
+1) Similar to experiment codes, now we want to control toggling of red and green leds using on board button connected to P1.3.
+
+The specs is as follows:
+
+- When no button is pressed, only RED led should toggle whereas GREEN led is off
+
+- When button is pressed, only GREEN led should toggle whereas RED led is off
+
+Toggling delay should be 20K cycles as in the experiment.
+
+2) (You need an additional push button for this experiment)
+
+- There should be push buttons connected to P1.3 (on board) and P1.4 (additional)
+
+- Additional push-button pins should be connected to GND and P1.4.
+
+- When P1.3 is pressed, only RED led should toggle, whereas GREEN led should be off
+
+- When P1.4 is pressed, only GREEN led should toggle, whereas RED led should be off
